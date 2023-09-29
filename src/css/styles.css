@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+}
+header{
+    width: 95%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
