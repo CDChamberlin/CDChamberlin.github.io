@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collin C Portfolio</title>
     <link rel="stylesheet" href="src/css/styles.css">
-    
+    <script src="https://kit.fontawesome.com/6e940b334a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <!-- <div class="btns-container">
-            
-        </div> -->
+        <div id="sound">
+            <audio id="myAudio">
+                <source src="./Night.mp3">
+            </audio>
+            <i class="fa-brands fa-soundcloud"></i>
+            <span>Sound</span>
+            <div class="on-off">
+                <span id="off">OFF</span>
+                <span id="on">On</span>
+            </div>
+        </div>
+        <div class="btns-container">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
     </header>
 
     <!-- sidebar -->
@@ -26,21 +38,22 @@
             <nav class="nav-links">
                 <a href="#">About</a>
                 <a href="#">My Skills</a>
-                <a href="#">Works</a>
+                <a href="#">Projects</a>
                 <!-- <a href="#">Blog</a> -->
                 <a href="#">Contact</a>
             </nav>
             <!-- Social Icons-->
             <ul class="social-icons">
                 <li>
-                    <img role="img" src="node_modules/bootstrap-icons/icons/linkedin.svg" alt="LinkedIn logo" width="32">
+                    <i class="fa-brands fa-github"></i>
                 </li>
                 <li>
-                    <img role="img" src="node_modules/bootstrap-icons/icons/github.svg" alt="Github" width="32">
+                    <i class="fa-brands fa-linkedin"></i>
                 </li>
             </ul>
         </div>
 
     </aside>
+    <!-- Text zone one-->
 </body>
 </html>
