@@ -38,7 +38,7 @@ header{
     color: #08fdd8;
 }
 .btns-container .fas{
-    
+
 }
 ul.img{
     fill: blue;
@@ -131,4 +131,10 @@ ul.img{
 
 .social-icons li a:hover{
     color: #08fdd8;
+}
+
+
+
+h1, h2, p{
+    text-align: center;
 }
