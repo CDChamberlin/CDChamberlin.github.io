@@ -24,8 +24,6 @@ on.addEventListener('click', () => soundTrack('on'));
 
 
 
-
-
 const btnBars = document.getElementById('bars');
 const btnTimes = document.querySelector('.times');
 const SideNav = document.querySelector('.aside');

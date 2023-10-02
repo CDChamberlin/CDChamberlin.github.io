@@ -37,9 +37,7 @@ header{
     display: none;
     color: #08fdd8;
 }
-.btns-container {
 
-}
 ul.img{
     fill: blue;
     width: 200 ;
@@ -48,7 +46,7 @@ ul.img{
 /* Aside section */
 .aside{
     width: 100%;
-    height: 0%;
+    height: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -97,19 +95,18 @@ ul.img{
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* nav section */
+/* nav section starts here */
+
 .nav-links a{
     display: block;
     text-align: center;
     line-height: 3rem;
     text-decoration: none;
     color: #908096;
-
 }
 .nav-links a:hover{
-    color: #08fdd8; 
+    color: #08fdd8;
 }
-
 .nav-links a::before{
     content: '';
     width: 100%;
@@ -120,12 +117,12 @@ ul.img{
 }
 
 /* social icons */
+
 .social-icons{
     list-style: none;
     display: flex;
     margin-bottom: 30px;
 }
-
 .social-icons li{
     width: 30px;
     font-size: 1rem;
@@ -134,13 +131,153 @@ ul.img{
     text-decoration: none;
     color: #909096;
 }
-
 .social-icons li a:hover{
     color: #08fdd8;
 }
 
-
-
-h1, h2, p{
-    text-align: center;
+/* nav bar ends here */
+#section-home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
 }
+.text-zone h1{
+    font-size: 3rem;
+    line-height: 45px;
+    letter-spacing: -3px;
+    position: relative;
+}
+.text-zone h1::before{
+    content: '<h1>';
+    position: absolute;
+    top: -80px;
+    left: -10px;
+    font-size: 1.2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+.text-zone h1::after{
+    content: '</h1>';
+    position: absolute;
+    bottom: -10px;
+    right: -70px;
+    font-size: 1.2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color: #666565;
+    letter-spacing: 3px;
+}
+.text-zone img{
+    width: 35px;
+    height: 50px;
+}
+.text-zone .gray-text{
+    margin-top: 30px;
+    color: #a2a2a3;
+    letter-spacing: 3px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* contact me button */
+.contact-button{
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: #08fdd8;
+    margin-top: 50px;
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition:  all .3s ease-in-out;
+}
+.contact-button span.bg{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: -5px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: #08fdd8;
+    transform: skewX(-19deg);
+    
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+.contact-button span.base{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid #08fdd8;
+    box-sizing: border-box;
+    
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.contact-button:hover span.text{
+    color: #1d1d1d;
+}
+/* media section for bigger screens */
+
+@media screen and (min-width: 756) {
+    header{
+        justify-content: flex-end;
+    }
+    .btns-container{
+        display: none;
+    }
+    .aside{
+        width: 10%;
+        height: 100%;
+    }
+    .aside-wrapper{
+        height: 80%;
+    }
+    .logo-section{
+        min-height: 25vh;
+    }
+    .logo img{
+        width: 50px;
+        height: auto;
+    }
+    .social-icons{
+        margin-bottom: 0;
+    }
+    .social-icons li{
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* Home Section */
+    #section-home{
+        padding-left: 13rem;
+    }
+    .text-zone h1{
+        font-size: 6.3rem;
+        line-height: 85px;
+        letter-spacing: -6px;
+    }
+    .text-zone .grey-text{
+        font-size: 1rem;
+    }
+}
+
+
