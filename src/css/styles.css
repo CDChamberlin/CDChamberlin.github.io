@@ -37,7 +37,7 @@ header{
     display: none;
     color: #08fdd8;
 }
-.btns-container .fas{
+.btns-container {
 
 }
 ul.img{
@@ -52,8 +52,14 @@ ul.img{
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden; 
+    overflow: hidden;
+    background-color: #191919; 
     z-index: 1;
+}
+.show-nav{
+    height: 100%;
+    overflow: visible;
+
 }
 .aside-wrapper{
     height: 100vh;
