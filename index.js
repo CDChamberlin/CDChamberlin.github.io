@@ -3,32 +3,34 @@ const off = document.querySelector('#off');
 const on = document.querySelector('#on');
 const myAudio = document.querySelector('#myAudio');
 
-off.addEventListener('click', () => soundTrack('off'));
-on.addEventListener('click',() => soundTrack('on'));
 
-const soundTrack = (soundState) =>{
+const soundTrack = (soundState) => {
     if(soundState === 'off'){
         on.style.display = 'block';
         off.style.display = 'none';
         soundCloud.style.color = "#08fdd8";
         myAudio.play();
+        console.log("Off clicked")
     }
-    else if(soundState === 'off'){
+    else if(soundState === 'on'){
         on.style.display = 'none';
         off.style.display = 'block';
         soundCloud.style.color = "#f50057";
         myAudio.pause();
+        console.log("On clicked")
     }
-}
+};
+
+off.addEventListener('click', () => soundTrack('off'));
+on.addEventListener('click', () => soundTrack('on'));
 
 
-const btnBars = document.querySelector('.bars');
+
+
+
+const btnBars = document.getElementById('bars');
 const btnTimes = document.querySelector('.times');
 const SideNav = document.querySelector('.aside');
-
-
-btnBars.addEventListener('click', () => myFunc('open'));
-btnTimes.addEventListener('click', () => myFunc('close'));
 
 const myFunc = (navCondition) => {
     if(navCondition === 'open'){
@@ -41,4 +43,8 @@ const myFunc = (navCondition) => {
             btnTimes.style.display = "none";
             btnBars.style.display = "block";
     }
-}
+};
+
+btnBars.addEventListener("click", () => myFunc('open'));
+btnTimes.addEventListener('click', () => myFunc('close'));
+
