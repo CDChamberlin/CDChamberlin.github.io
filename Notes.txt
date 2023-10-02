@@ -1,0 +1,4 @@
+## Add link to current Projects
+Ability to preview working example
+Add profile picture. 
+Add Resume
