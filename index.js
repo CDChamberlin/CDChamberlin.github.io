@@ -10,14 +10,12 @@ const soundTrack = (soundState) => {
         off.style.display = 'none';
         //soundCloud.style.color = "#08fdd8";
         myAudio.play();
-        console.log("Off clicked")
     }
     else if(soundState === 'on'){
         on.style.display = 'none';
         off.style.display = 'block';
         //soundCloud.style.color = "#f50057";
         myAudio.pause();
-        console.log("On clicked")
     }
 };
 
