@@ -2,3 +2,4 @@
 Ability to preview working example
 Add profile picture. 
 Add Resume
+Contact details (<address>)
