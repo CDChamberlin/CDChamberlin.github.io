@@ -6,23 +6,24 @@ export default function Home() {
                     id="section-home"
                     className="min-h-lvh flex items-center pl-6"
                 >
-                    <h1 className="font-la_belle_aurore text-5xl">
+                    <h1 className="text-[4rem]">
                         Hi, <br />
                         I'm Collin Chamberlin <br />
                         Web Developer
                     </h1>
                 </section>
                 <section id="About Me">
-                    <h2>About Me</h2>
+                    <h2 className="text-3xl text-[#08fdd8]">About Me</h2>
                     <article>
-                        <p>
+                        <p className="text-lg">
                             I'm an aspiring student, driven by a profound
                             passion for a variety of interests that encompass
                             technology, creativity, gaming, and outdoor
                             adventures. These pursuits define who I am and what
                             I cherish in life.
-                        </p>
-                        <p>
+                        </p>{" "}
+                        <br />
+                        <p className="whitespace-pre-line">
                             Tech Enthusiast: Technology is my heart and soul. My
                             journey with computers began at an early age, and
                             I've since honed my skills to coding,
@@ -30,6 +31,7 @@ export default function Home() {
                             The ever-evolving world of technology is not just a
                             hobby; it's a way of life.
                         </p>
+                        <br />
                         <p>
                             Modeling Maven: Model building is my creative
                             escape. Crafting intricate scale models of
@@ -37,7 +39,8 @@ export default function Home() {
                             replicas of futuristic concepts fascinate me. The
                             precision and patience required in this hobby are
                             skills I've cultivated and hold dear.
-                        </p>
+                        </p>{" "}
+                        <br />
                         <p>
                             Gamer Extraordinaire: Gaming, in all its forms,
                             offers me a world of excitement and exploration. I
@@ -47,7 +50,8 @@ export default function Home() {
                             "Monopoly" and "Risk." And when it comes to
                             storytelling and role-playing, there's nothing quite
                             like the thrill of "Dungeons and Dragons."
-                        </p>
+                        </p>{" "}
+                        <br />
                         <p>
                             Outdoor Enthusiast: While I spend a considerable
                             amount of time indoors, the great outdoors also
@@ -58,6 +62,7 @@ export default function Home() {
                             where the focus on marksmanship and the appreciation
                             of firearms' mechanical precision intrigue me.
                         </p>
+                        <br />
                         <p>
                             LitRPG Literature Lover : When it's time to relax, I
                             dive into the immersive worlds of LitRPG (Literary
@@ -67,6 +72,7 @@ export default function Home() {
                             skills, and confront epic challenges. It's the
                             perfect way to unwind and let my imagination roam.
                         </p>
+                        <br />
                         <p>
                             In essence, I'm a multifaceted individual eagerly
                             pursuing knowledge and growth as an aspiring

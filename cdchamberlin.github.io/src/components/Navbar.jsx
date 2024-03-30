@@ -6,7 +6,7 @@ export default function Navbar({ children }) {
             {[
                 ["Home", "/"],
                 // ["Education", "/education"],
-                ["About", "/about"],
+                ["Contact Me", "/contact"],
                 ["Projects", "/projects"],
             ].map(([title, url]) => (
                 <Link href={url} key={title}>
