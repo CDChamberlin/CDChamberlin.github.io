@@ -9,8 +9,8 @@ export default function Navbar({ children }) {
                 ["About", "/about"],
                 ["Projects", "/projects"],
             ].map(([title, url]) => (
-                <Link href={url}>
-                    <button className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">
+                <Link href={url} key={title}>
+                    <button className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900 dark:text-sky-500">
                         {title}
                     </button>
                 </Link>
