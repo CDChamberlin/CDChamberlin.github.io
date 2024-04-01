@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar({ children }) {
     return (
-        <nav className="flex sm:justify-center space-x-4">
+        <nav className="flex sm:justify-center space-x-4 fixed top-0 right-0">
             {[
                 ["Home", "/"],
                 // ["Education", "/education"],
