@@ -15,6 +15,9 @@ module.exports = {
             fontFamily: {
                 la_belle_aurore: ["var(--font-la_belle_aurore"],
             },
+            colors: {
+                "lime-green": "#08fdd8",
+            },
         },
     },
     plugins: [],
