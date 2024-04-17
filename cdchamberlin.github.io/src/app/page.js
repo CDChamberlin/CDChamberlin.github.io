@@ -8,13 +8,17 @@ export default function Home() {
                 >
                     <h1 className="text-[4rem]">
                         Hi, <br />
-                        I'm <strong>Collin Chamberlin</strong> <br />
+                        I'm{" "}
+                        <strong className="text-navy-blue-950">
+                            Collin Chamberlin
+                        </strong>{" "}
+                        <br />
                         Web Developer
                     </h1>
                 </section>
                 <section id="About Me">
-                    <h2 className="text-3xl text-lime-green">About Me</h2>
-                    <article>
+                    <h2 className="text-3xl text-aquamarine-400">About Me</h2>
+                    <article className="space-y-8">
                         <p className="lg: text-xl">
                             I'm an aspiring student, driven by a profound
                             passion for a variety of interests that encompass
@@ -23,7 +27,7 @@ export default function Home() {
                             I cherish in life.
                         </p>{" "}
                         <br />
-                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest">
+                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest first-line:text-aquamarine-300">
                             Tech Enthusiast: <br /> Technology is my heart and
                             soul. My journey with computers began at an early
                             age, and I've since honed my skills to coding,
@@ -32,7 +36,7 @@ export default function Home() {
                             hobby; it's a way of life.
                         </p>
                         <br />
-                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest">
+                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest first-line:text-aquamarine-300">
                             Modeling Maven: <br /> Model building is my creative
                             escape. Crafting intricate scale models of
                             fantastical creatures and engineering miniature
@@ -41,7 +45,7 @@ export default function Home() {
                             skills I've cultivated and hold dear.
                         </p>{" "}
                         <br />
-                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest">
+                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest first-line:text-aquamarine-300">
                             Gamer Extraordinaire: <br /> Gaming, in all its
                             forms, offers me a world of excitement and
                             exploration. I find myself equally at home in the
@@ -53,7 +57,7 @@ export default function Home() {
                             Dragons."
                         </p>{" "}
                         <br />
-                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest">
+                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest first-line:text-aquamarine-300">
                             Outdoor Enthusiast: <br /> While I spend a
                             considerable amount of time indoors, the great
                             outdoors also beckon. Hiking and camping bring me
@@ -65,7 +69,7 @@ export default function Home() {
                             intrigue me.
                         </p>
                         <br />
-                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest">
+                        <p className="lg: text-xl first-line:uppercase first-line:tracking-widest first-line:text-aquamarine-300">
                             LitRPG Literature Lover : <br /> When it's time to
                             relax, I dive into the immersive worlds of LitRPG
                             (Literary Role-Playing Game) books. These novels

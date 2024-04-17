@@ -6,19 +6,58 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {
-            backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        colors: ({ colors }) => ({
+            white: colors.white,
+            black: colors.black,
+            aquamarine: {
+                50: "#edfffc",
+                100: "#c0fff6",
+                200: "#82ffef",
+                300: "#3cffe7",
+                400: "#08fdd8",
+                500: "#00e0bf",
+                600: "#00b59e",
+                700: "#008f7f",
+                800: "#007166",
+                900: "#055c55",
+                950: "#003a37",
             },
-            fontFamily: {
-                la_belle_aurore: ["var(--font-la_belle_aurore"],
+            arapawa: {
+                50: "#f3f5ff",
+                100: "#e9ecfe",
+                200: "#d6dcfe",
+                300: "#b5befd",
+                400: "#8b94fa",
+                500: "#5d61f5",
+                600: "#423bec",
+                700: "#3329d8",
+                800: "#2a21b6",
+                900: "#251d95",
+                950: "#121063",
             },
-            colors: {
-                "lime-green": "#08fdd8",
+            "navy-blue": {
+                50: "#f1f4ff",
+                100: "#e5e8ff",
+                200: "#ced5ff",
+                300: "#a7b1ff",
+                400: "#767fff",
+                500: "#3f42ff",
+                600: "#2118ff",
+                700: "#1007fa",
+                800: "#0d05d2",
+                900: "#0c06ac",
+                950: "#000080",
             },
-        },
+
+            blue: colors.blue,
+            gray: colors.gray,
+            cyan: colors.cyan,
+            sky: colors.sky,
+            indigo: colors.indigo,
+            violet: colors.violet,
+            purple: colors.purple,
+        }),
+        extend: {},
     },
     plugins: [],
 };
