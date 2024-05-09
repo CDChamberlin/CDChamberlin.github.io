@@ -3,12 +3,12 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <section
                 id="section-home"
-                className="min-h-lvh flex items-center pl-6"
+                className="min-h-screen flex justify-left items-start min-w-full"
             >
-                <h1 className="text-[4rem]">
+                <h1 className="md:text-[4rem] text-[2rem] md:text-left md:ml-6 text-center w">
                     Hi, <br />
                     I'm{" "}
-                    <strong className="text-navy-blue-950">
+                    <strong className="text-sky-500">
                         Collin Chamberlin
                     </strong>{" "}
                     <br />
