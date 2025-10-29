@@ -9,9 +9,10 @@ export default function Navbar({ children }) {
             <section id="nav" className="fixed top-0 right-0">
                 {[
                     ["Home", "/"],
-                    // ["Education", "/education"],
+                    ["Education", "/education"],
                     ["Contact Me", "/contact"],
                     ["Projects", "/projects"],
+                    ["Resume", "/resume"],
                 ].map(([title, url]) => (
                     <Link href={url} key={title}>
                         <button className="rounded-lg px-3 py-2 text-sky-500 font-medium hover:bg-slate-100 hover:text-blue-600 dark:text-aquamarine-400">

@@ -31,3 +31,8 @@ body {
         text-wrap: balance;
     }
 }
+@layer components {
+    .section-heading {
+        @apply text-2xl text-aquamarine-300 mb-2;
+    }
+}
