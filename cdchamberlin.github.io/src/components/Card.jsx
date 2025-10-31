@@ -17,14 +17,12 @@ export default function Card({
                 className="object-cover w-full max-w-xs rounded-t-lg md:rounded-none md:rounded-l-lg md:w-1/3 lg:w-1/4"
             />
             <section className="flex flex-col justify-between p-4 leading-normal text-center md:text-left flex-1">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-white">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-aquamarine-300 dark:text-aquamarine-400">
                     {title}
                 </h5>
-                <h6 className="mb-2 text-xl">{year}</h6>
-                <p className="font-medium">{subtitle}</p>
-                <p className="text-gray-700 dark:text-gray-300">
-                    {description}
-                </p>
+                <h6 className="mb-2 text-xl text-gray-600 dark:text-gray-300">{year}</h6>
+                <p className="font-medium text-gray-800 dark:text-gray-200">{subtitle}</p>
+                <p className="text-gray-700 dark:text-gray-300">{description}</p>
             </section>
         </div>
     );

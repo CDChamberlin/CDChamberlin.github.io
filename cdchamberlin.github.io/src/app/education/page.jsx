@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 
 export default function Education() {
     return (
-        <main className="min-h-screen grid place-content-center">
+        <main className="min-h-screen flex flex-col items-center gap-8 px-4 py-16 pt-24 md:pt-32">
             <Card
                 image={"logos/mastermark-enterprise.svg"}
                 imageAlt={"VCU"}
