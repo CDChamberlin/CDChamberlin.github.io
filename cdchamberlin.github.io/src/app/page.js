@@ -8,7 +8,7 @@ export default function Home() {
                 <h1 className="md:text-[4rem] text-[2rem] md:text-left md:ml-6 text-center">
                     Hi, <br />
                     I'm{" "}
-                    <strong className="text-sky-400">Collin Chamberlin</strong>,
+                    <strong className="text-aquamarine-400">Collin Chamberlin</strong>,
                     <br />
                     Full Stack Developer
                 </h1>
