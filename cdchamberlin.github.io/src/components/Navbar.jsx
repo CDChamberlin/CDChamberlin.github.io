@@ -10,9 +10,9 @@ export default function Navbar({ children }) {
                 {[
                     ["Home", "/"],
                     ["Education", "/education"],
-                    ["Contact Me", "/contact"],
                     ["Projects", "/projects"],
-                    ["Resume", "/resume"],
+                    ["Experience", "/experience"],
+                    ["Contact Me", "/contact"],
                 ].map(([title, url]) => (
                     <Link href={url} key={title}>
                         <button className="rounded-lg px-3 py-2 text-sky-500 font-medium hover:bg-slate-100 hover:text-blue-600 dark:text-aquamarine-400">
