@@ -2,7 +2,9 @@
 const nextConfig = {
     output: "export",
     reactStrictMode: true,
-    images: {unoptimized: true}
+    images: {unoptimized: true},
+    basePath: "",
+    assetPrefix: "https://cdchamberlin.github.io"
 };
 
 export default nextConfig;
