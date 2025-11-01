@@ -4,7 +4,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {unoptimized: true},
     basePath: "",
-    assetPrefix: "https://cdchamberlin.github.io"
+    assetPrefix: process.env.NODE_ENV === "production" ? "/cdchamberlin.github.io" : ""
 };
 
 export default nextConfig;
