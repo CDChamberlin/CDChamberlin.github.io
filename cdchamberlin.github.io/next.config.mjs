@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    reactStrictMode: true,
-    images: {unoptimized: true},
-    basePath: "",
-    assetPrefix: process.env.NODE_ENV === "production" ? "/" : ""
+  output: 'export',
+  reactStrictMode: true,
+  images: { unoptimized: true },
+  basePath: '',
+  assetPrefix: '',
 };
 
 export default nextConfig;
