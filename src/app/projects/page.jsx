@@ -79,23 +79,19 @@ export default function Projects() {
     const mainProjects = projects.slice(0, 2);
 
     return (
-        <main className="px-6 py-12 min-h-screen text-gray-100">
-            <h1 className="mb-10 text-4xl font-semibold text-center text-aquamarine-400">
-                Projects
-            </h1>
+      <main className="px-6 py-12 min-h-screen text-gray-100 pt-24">
+        <h1 className="mb-10 text-4xl font-semibold text-center text-aquamarine-400">Projects</h1>
 
-            <div className="space-y-12">
-                {mainProjects.map((proj, i) => (
-                    <ProjectCard key={i} project={proj} />
-                ))}
-            </div>
+        <div className="space-y-12">
+          {mainProjects.map((proj, i) => (
+            <ProjectCard key={i} project={proj} />
+          ))}
+        </div>
 
-            <section className="mt-16">
-                <h2 className="text-2xl font-semibold mb-6 text-center">
-                    Legacy Project
-                </h2>
-                <ProjectCard project={projects[2]} />
-            </section>
-        </main>
+        <section className="mt-16">
+          <h2 className="text-2xl font-semibold mb-6 text-center">Legacy Project</h2>
+          <ProjectCard project={projects[2]} />
+        </section>
+      </main>
     );
 }

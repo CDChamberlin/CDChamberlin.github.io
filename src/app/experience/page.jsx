@@ -40,40 +40,33 @@ export default function Experience() {
     ];
 
     return (
-        <main className="min-h-screen ">
+      <main className="min-h-screen pt-24">
+        <section className="px-8 md:px-24 py-16">
+          <h1 className="text-4xl font-bold text-aquamarine-400 mb-12">Professional Experience</h1>
 
-            <section className="px-8 md:px-24 py-16">
-                <h1 className="text-4xl font-bold text-aquamarine-400 mb-12">
-                    Professional Experience
-                </h1>
+          <div className="relative border-l border-aquamarine-500 pl-10">
+            {experiences.map((job, i) => (
+              <div key={i} className="mb-12 relative">
+                {/* Timeline Dot */}
+                <div className="absolute -left-[0.9rem] top-3 w-3 h-3 bg-aquamarine-400 rounded-full border border-gray-900"></div>
 
-                <div className="relative border-l border-aquamarine-500 pl-10">
-                    {experiences.map((job, i) => (
-                        <div key={i} className="mb-12 relative">
-                            {/* Timeline Dot */}
-                            <div className="absolute -left-[0.9rem] top-3 w-3 h-3 bg-aquamarine-400 rounded-full border border-gray-900"></div>
+                {/* Job Info */}
+                <h2 className="section-heading">{job.company}</h2>
+                <h3 className="text-xl font-medium text-gray-200">{job.role}</h3>
 
-                            {/* Job Info */}
-                            <h2 className="section-heading">{job.company}</h2>
-                            <h3 className="text-xl font-medium text-gray-200">
-                                {job.role}
-                            </h3>
+                <p className="italic text-aquamarine-300">
+                  <time dateTime={job.start}>{job.dates}</time>
+                </p>
 
-                            <p className="italic text-aquamarine-300">
-                                <time dateTime={job.start}>
-                                    {job.dates}
-                                </time>
-                            </p>
-
-                            <ul className="list-disc list-inside space-y-2 text-lg mt-3">
-                                {job.bullets.map((b, idx) => (
-                                    <li key={idx}>{b}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </main>
+                <ul className="list-disc list-inside space-y-2 text-lg mt-3">
+                  {job.bullets.map((b, idx) => (
+                    <li key={idx}>{b}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
     );
 }
